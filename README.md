@@ -9,9 +9,7 @@
 
 **II. Reading the Data**
 
-   To analyze the input file, a function called Reading_Data was written that (a) determines, from the header line, the respective column position of the terms ‘Date received,’ ‘Product’ and ‘Company.’ Next, the data from the ‘Product’ and ‘Company’ columns are collected character by character into respective vector containers. These two vector containers contain the universe of responses for that input data.
-
-   Toward that universe of data, a n-ary tree vector container is compared in a second function called Filing_the_Data. This function selectively reads the input file again, line by line. In each line, the respective input from the year according to the ‘Date received,’ is compared against the parts of the n-art tree that has the ‘Product’ and ‘Company.’ An increment occurs to the term product count if there is a match for the ‘Product’ and then an increment for a complaint count term with the respective ‘Company.’
+   To analyze the input file, a function called Reading_Data was written that (a) determines, from the header line, the respective column position of the terms ‘Date received,’ ‘Product’ and ‘Company.’ Next, the data from the ‘Product’ and ‘Company’ columns are collected character by character into respective vector containers. These two vector containers contain the universe of responses for that input data. With that universe of data, a n-ary tree vector container is created by a second function called Filing_the_Data. This function selectively makes a n-ary tree for each year from 2010 through 2020. 
 
    The data itself is from the years 2010 to 2020. The Consumer Financial Protection Bureau (CFPB) was created in 2010 by the Dodd-Frank Wall Street Reform and Consumer Protection Act, Pub. L. 111–203, title X, § 1011, July 21, 2010, 124 Stat. 1964. CFPB is an independent bureau within the Federal Reserve System.
 
@@ -22,7 +20,7 @@
 
 **IV. Calculations**
 
-   The computations were based upon finding the maximum of the complaint count as well as a summation of the complaint count. From the Standard Template Library, the functions maximum_element and accumulate were deployed.
+   The computations were based upon finding the maximum of the complaint count as well as a summation of the complaint count. From the Standard Template Library, the functions maximum_element and accumulate were deployed. A function called Counting_Data reads the input file again, line by line. In each line, the respective input from the year according to the ‘Date received,’ is compared against the parts of the n-art tree that has the ‘Product’ and ‘Company.’ An increment occurs to the term product count if there is a match for the ‘Product’ and then an increment for a complaint count term with the respective ‘Company.’
 
 **V. Remaining Refinements**
 
